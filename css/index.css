@@ -322,6 +322,10 @@ h2 {
 	margin: 20px 40px 15px 0px;
 }
 
+.navline {
+	display: none;
+}
+
 /* Tablet */
 @media (max-width: 800px) {
 
@@ -335,6 +339,8 @@ h2 {
    header div {
 	   display: flex;
 	   flex-wrap: wrap-reverse;
+	   margin-left: 0px;
+	   justify-content: center;
 	   
    }
 
@@ -345,13 +351,18 @@ h2 {
 	.menubar nav a {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: space-around;
+		margin: 10px;
+		font-size: 16px;
 	}
    
    .image-holder {
 	   display: none;
    }
 
+   .footer-content {
+	   justify-content: flex-start;
+   }
 
 }
 
@@ -365,27 +376,66 @@ h2 {
 	.menubar {
 		display: flex;
 		flex-direction: column-reverse;
-		border: 1px solid red;
 		flex-wrap: wrap;
-		width: 80%;
+		width: 70%;
+	}
+
+	header .logoimg {
+		margin-left: 55px;
 	}
 
 	nav a {
 		flex-direction: column;
-		border: 2px solid green;
 		flex-wrap: wrap;
-		margin: 0px 100px;
+		margin: 0px 8px;
 		font-size: 25px;
+		width: 100%;
 	}
 
 	.row h1 {
-		border: 2px solid red;
 		margin-left: 65px;
 	}
 
 	.slogan .btn {
 		margin-left: 110px;
-		border: 2px solid blue;
+	}
+
+	.navline {
+		display: block;
+		width: 80%;
+		margin-right: 50px;
+	}
+
+	.main {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.top-content {
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.top-box h2 {
+		margin-bottom: 20px;
+	}
+
+	.top-box p {
+		margin-bottom: 15px;
+		width: 100%;
+	}
+
+	.bottom-content {
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	footer {
+		display: flex;
+		margin-left: 1px;
 	}
 
 
